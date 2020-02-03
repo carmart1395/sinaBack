@@ -27,6 +27,7 @@ public class UsersController {
         return usersService.getUsers();
     }
 
+
     @RequestMapping(path = "/{userId}", method = RequestMethod.GET)
     public SecuUsers getUser(@PathVariable Integer userId) {
         return usersService.getUser(userId);
